@@ -1,3 +1,5 @@
+p{font-size:inherit}
+
 header ~ .swiper_outer .swiper-wrapper>.swiper-slide{padding-top:.9rem}
 
 
@@ -199,7 +201,7 @@ header .i_logo{width:2.6rem;height:.9rem;background:url('../images/t_logo.png') 
 /*page2*/
 .i_tit{width: .62rem;height: .57rem;background:url('../images/icon_tit.png') 50% no-repeat;background-size:cover;vertical-align: middle}
 .tit_wrap{left: 50%;top:1.9rem;color: #2c3545;text-align:left}
-.tit_wrap h1{padding:.1rem .15rem;position: relative;display: inline-block}
+.tit_wrap h1{padding:.1rem .15rem;position: relative;display: inline-block;font-weight: 300}
 .tit_wrap h1:before{content: '';position: absolute;left:0;bottom: 0;width: 1.7rem;height: .02rem;min-height:1px;background:#a3b5d3}
 .tit_wrap h2{padding:.1rem .15rem;color: #3865cf;margin-left:1.7rem;border-left: .02rem solid #a3b5d3;border-bottom: .02rem solid #a3b5d3}
 
