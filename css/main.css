@@ -1,4 +1,14 @@
+header ~ .swiper_outer .swiper-wrapper>.swiper-slide{padding-top:.9rem}
+
+
+.mt100{margin-top: 1rem}
+.mb100{margin-bottom: 1rem}
+.mr20{margin-right: .2rem}
+
+.f26,.f26 h2{font-size:.26rem}
 .f30{font-size:.3rem}
+.f32{font-size:.32rem}
+.f42{font-size:.42rem}
 .f50{font-size:.5rem}
 
 .radius6{-webkit-border-radius:.06rem;-moz-border-radius:.06rem;-ms-border-radius:.06rem;-o-border-radius:.06rem;border-radius:.06rem}
@@ -38,11 +48,11 @@
 
 /********************************/
 .swiper-container>.swiper-pagination-bullets{right:.2rem}
-.swiper-container>.swiper-pagination-bullets .swiper-pagination-bullet{width:.16rem;height:.16rem;background:#12284D;border:.03rem solid rgba(228,229,231,.42);opacity:.4;-webkit-background-clip: padding-box;-moz-background-clip:padding;-o-background-clip: padding-box;background-clip: padding-box}
-.swiper-container>.swiper-pagination-bullets .swiper-pagination-bullet-active{background:#4A7AE1;border:.03rem solid rgba(228,229,231,.42);opacity:1}
+.swiper-container>.swiper-pagination-bullets .swiper-pagination-bullet{width:.2rem;height:.2rem;background:#12284D;border:.03rem solid rgba(228,229,231,.42);opacity:.4;-webkit-background-clip: padding-box;-moz-background-clip:padding;-o-background-clip: padding-box;background-clip: padding-box}
+.swiper-container>.swiper-pagination-bullets .swiper-pagination-bullet-active{background:#4A7AE1;opacity:1;-webkit-background-clip: padding-box;-moz-background-clip:padding;-o-background-clip: padding-box;background-clip: padding-box}
 
 .swiper-container>.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 .16rem}
-.swiper-container-v>.swiper-pagination-bullets .swiper-pagination-bullet{margin:.15rem 0}
+.swiper-container-v>.swiper-pagination-bullets .swiper-pagination-bullet{margin:.15rem 0;border:.05rem solid rgba(228,229,231,.42)}
 
 .mui-off-canvas-left{width:48%;max-width:3.6rem;background:url(../images/menu_bg.jpg) 50% top no-repeat;background-size:cover}
 /* .mui-off-canvas-right{width:61.333%;max-width:6.133333rem;background:#fff} */
@@ -185,5 +195,15 @@ header .i_logo{width:2.6rem;height:.9rem;background:url('../images/t_logo.png') 
 .page1_bg1{background:url('../images/p1_bg1.jpg') 50% no-repeat;background-size:cover}
 .page1_bg2{background:url('../images/p1_bg2.jpg') 50% no-repeat;background-size:cover}
 .page1_bg3{background:url('../images/p1_bg3.jpg') 50% no-repeat;background-size:cover}
+
+/*page2*/
+.i_tit{width: .62rem;height: .57rem;background:url('../images/icon_tit.png') 50% no-repeat;background-size:cover;vertical-align: middle}
+.tit_wrap{left: 50%;top:1.9rem;color: #2c3545;text-align:left}
+.tit_wrap h1{padding:.1rem .15rem;position: relative;display: inline-block}
+.tit_wrap h1:before{content: '';position: absolute;left:0;bottom: 0;width: 1.7rem;height: .02rem;min-height:1px;background:#a3b5d3}
+.tit_wrap h2{padding:.1rem .15rem;color: #3865cf;margin-left:1.7rem;border-left: .02rem solid #a3b5d3;border-bottom: .02rem solid #a3b5d3}
+
+.tit_black{color: #fff}
+.tit_black h2{color: #adc5ff}
 
 /********************************/
