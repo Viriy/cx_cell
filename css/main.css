@@ -14,6 +14,7 @@ header ~ .swiper_outer >.swiper-wrapper>.swiper-slide{padding-top:.9rem}
 .mt50{margin-top:.5rem}
 .mt60{margin-top:.6rem}
 .mt70{margin-top:.7rem}
+.mt80{margin-top:.8rem}
 .mt100{margin-top:1rem}
 .mb80{margin-bottom:.8rem}
 .mb90{margin-bottom:.9rem}
@@ -225,9 +226,9 @@ header ~ .swiper_outer >.swiper-wrapper>.swiper-slide.page1{padding-top:0}
 .tit_wrap{left:50%;top:1.9rem;color:#2c3545;text-align:left}
 .tit_wrap h1{padding:.1rem;position:relative;display:inline-block;font-weight:300}
 .tit_wrap h1:before{content:'';position:absolute;left:0;bottom:0;width:1.8rem;height:.02rem;min-height:1px;background:#a3b5d3}
-.tit_wrap h2{padding:.1rem .15rem;color:#3865cf;margin-left:1.8rem;border-left:.02rem solid #a3b5d3;border-bottom:.02rem solid #a3b5d3;text-transform:uppercase}
+.tit_wrap h2{padding:.1rem .15rem;color:#3865cf;margin-left:1.8rem;border-left:.02rem solid #a3b5d3;border-bottom:.02rem solid #a3b5d3;text-transform:uppercase;margin-top: -.02rem}
 
-
+.swiper_page2{width: 7.4rem}
 .swiper_page2 a{position:relative;margin:.05rem}
 .swiper_page2 a,.swiper_page2 img{width:3.5rem;height:2.4rem}
 .swiper_page2 a p{position:absolute;left:0;bottom:0;width:100%;height:.9rem;color:#fff;padding:.42rem .16rem 0;background:#12284d;
@@ -275,8 +276,9 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#12284d', endC
 .swiper_page6,.swiper_page6 .list_case{overflow:visible}
 .swiper_page6 .list_case{padding:.54rem 0 .1rem;margin: 0 .55rem;width:6.4rem}
 .swiper_page6 a{padding-left:.8rem;display: block;position: relative}
-.swiper_page6 a p{line-height: .36rem;padding: .2rem .2rem .2rem 0}
-.swiper_page6 a:not(:last-child) p{box-shadow:0 .01rem .01rem #dce8f5}
+.swiper_page6 a p{line-height: .36rem;padding: .2rem .2rem .2rem 0;position: relative;}
+.swiper_page6 a:not(:last-child) p:before{content:'';position: absolute;left: 0;right: 0;bottom: 0;height:.01rem;min-height: 1px;border-top: .01rem solid #dce8f5;color: #e5e5e5;-webkit-transform-origin: 0 0;transform-origin: 0 0;-webkit-transform: scaleY(.5);transform: scaleY(.5);z-index: 2;
+}
 .i_diamond{width:.32rem;height: .32rem;margin-right: .24rem;background: url('../images/diamond.png') 50% no-repeat;background-size: cover;position: absolute;left:.24rem;top:50%;margin-top:-.16rem}
 
 /*page7*/
@@ -294,4 +296,33 @@ header ~ .swiper_outer >.swiper-wrapper>.swiper-slide.page8{padding-top:0}
 .page8 .con_wrap{padding:0 0 .5rem}
 .page8 .copy{line-height:.9rem}
 .page8 .copy:before{content: '';position: absolute;top: 0;left:0;width: 100%;height: .01rem;min-height:1px;background: #416eab}
+
+/* @media only screen and (min-width: 540px) {
+	.mt50{margin-top:.3rem}
+	.mt60{margin-top:.4rem}
+	.mt70{margin-top:.5rem}
+	.mt80{margin-top:.6rem}
+	.mt100{margin-top: .8rem}
+
+	.mb80{margin-bottom:.6rem}
+	.mb90{margin-bottom:.7rem}
+	.mb100{margin-bottom:.8rem}
+}
+@media only screen and (min-width: 320px){
+	.mt50{margin-top:.15rem}
+	.mt60{margin-top:.3rem}
+	.mt70{margin-top:.3rem}
+	.mt80{margin-top:.4rem}
+	.mt100{margin-top: .4rem}
+
+	.mb80{margin-bottom:.4rem}
+	.mb90{margin-bottom:.8rem}
+	.mb100{margin-bottom:.6rem}
+
+	.arrow_down{bottom: .3rem}
+	.swiper_page6 a{padding-left: .7rem}
+	.i_diamond{left:.2rem}
+	.swiper_page6 a p{padding:.16rem .16rem .16rem 0}
+}
+ */
 /********************************/
