@@ -92,6 +92,7 @@ header .pa{width:.9rem}
 header .i_logo{width:2.6rem;height:.9rem;background:url('../images/t_logo.png') 50% no-repeat;background-size:1.95rem}
 
 /* page1 */
+header ~ .swiper_outer >.swiper-wrapper>.swiper-slide.page1{padding-top:0}
 /*logobox*/
 .logobox{
 	position:absolute;
