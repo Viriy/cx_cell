@@ -1,8 +1,6 @@
 mui.init();
 //主界面和侧滑菜单界面均支持区域滚动；
 mui('#offCanvasSideScroll').scroll();
-//mui('#offCanvasContentScroll').scroll();
-//mui('.mui-scroll-wrapper').scroll();
 
 //侧滑容器父节点
 var offCanvasWrapper = mui('.mui-off-canvas-wrap');
@@ -11,10 +9,6 @@ $(".offCanvasHide").on('tap', function() {
 });
 
 (function() {
-	
-	TweenMax.to($("#toploader"),2,{autoAlpha:0});
-
-
 	var supportOrientation = (typeof window.orientation === 'number' && typeof window.onorientationchange === 'object');
 	var init = function(){
 		var htmlNode = document.body.parentNode,
@@ -45,14 +39,11 @@ $(".offCanvasHide").on('tap', function() {
 	};
 	window.addEventListener('DOMContentLoaded',init,false);
 	
-	
-	
-	
     // 微信分享
      function ready(){
        share({
         title:document.title,
-        desc: '分享描述',
+        desc: '承信网络',
         link: location.href,
         imgUrl: '../images/share.jpg',//显示小图标
         debug: false
