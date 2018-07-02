@@ -1,5 +1,7 @@
 p{font-size:inherit;color:inherit}
 
+.clearfix{zoom:1}.clearfix:after{visibility:hidden;display:block;clear:both;height:0;font-size:0;content:"."}
+
 header ~ .swiper_outer >.swiper-wrapper>.swiper-slide,header ~ article{padding-top:.9rem}
 
 .swiper_outer,.swiper_page1{width:100%;height:100%}
@@ -231,8 +233,8 @@ header ~ .swiper_outer >.swiper-wrapper>.swiper-slide.page1{padding-top:0}
 .tit_wrap h1:before{content:'';position:absolute;left:0;bottom:0;width:1.8rem;height:.02rem;min-height:1px;background:#a3b5d3}
 .tit_wrap h2{padding:.1rem .15rem;color:#3865cf;margin-left:1.8rem;border-left:.02rem solid #a3b5d3;border-bottom:.02rem solid #a3b5d3;text-transform:uppercase;margin-top:-.02rem}
 
-.swiper_page2{width:7.5rem}
-.swiper_page2 a{position:relative;margin:.05rem}
+.swiper_page2{width:7.2rem}
+.swiper_page2 a{position:relative;margin:.05rem;float:left}
 .swiper_page2 a,.swiper_page2 img{width:3.5rem;height:2.4rem}
 .swiper_page2 a p{position:absolute;left:0;bottom:0;width:100%;height:.9rem;color:#fff;padding:.42rem .16rem 0;background:#12284d;
 background:-moz-linear-gradient(top, rgba(18,40,77,0) 0%, rgba(18,40,77,.6) 100%);
@@ -287,6 +289,7 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#12284d', endC
 .page7 .tit_wrap h2{margin-left:2.15rem}
 .swiper_partners{height:4.8rem}
 .swiper_partners a{width:2.8rem;height:1rem;margin:.1rem}
+/* .swiper_partners .swiper-slide{height: 	1rem !important} */
 
 /*footer*/
 header ~ .swiper_outer >.swiper-wrapper>.swiper-slide.footer{padding-top:0}
