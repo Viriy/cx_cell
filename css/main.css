@@ -11,6 +11,8 @@ header ~ .swiper_outer >.swiper-wrapper>.swiper-slide,header ~ article{padding-t
 .ellipsis2{-webkit-line-clamp:2}
 .ellipsis3{-webkit-line-clamp:3}
 
+.mt{margin-top:.266667rem}
+.mt30{margin-top:.4rem}
 .mt50{margin-top:.5rem}
 .mt60{margin-top:.6rem}
 .mt70{margin-top:.7rem}
@@ -87,7 +89,7 @@ header ~ .swiper_outer >.swiper-wrapper>.swiper-slide,header ~ article{padding-t
 .list_menu a{height:.9rem;line-height:.9rem;color:#CDD8E2;padding:0 .3rem;-webkit-box-shadow:0 1px 1px rgba(26,93,153,.4);-moz-box-shadow:0 1px 1px rgba(26,93,153,.4);box-shadow:0 1px 1px rgba(26,93,153,.4)}
 .list_menu .icon{margin-right:.32rem;width:.52rem;font-size:.6rem;text-align:center}
 .list_menu .active{color:#339CF4}
-.list_menu span{vertical-align:middle}
+.list_menu span,.vam{vertical-align:middle}
 
 header{width:100%;height:.9rem;line-height:.9rem;background:rgba(81,119,212,.8);z-index:99999}
 header .pa{width:.9rem}
@@ -214,7 +216,7 @@ header ~ .swiper_outer >.swiper-wrapper>.swiper-slide.page1{padding-top:0}
 }
 
 .swiper_page1{width:100%;height:100%}
-.swiper_page1 .swiper-pagination{bottom:2.58rem}
+.swiper_page1 .page1-pagination{bottom:2.58rem;z-index:999;position:absolute}
 .swiper_page1>.swiper-pagination-bullets .swiper-pagination-bullet{width:.5rem;height:.06rem;background:#fff;opacity:.6;border-radius:0}
 .swiper_page1>.swiper-pagination-bullets .swiper-pagination-bullet-active{background:#F7C00E;opacity:.8}
 
@@ -243,7 +245,6 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#12284d', endC
 .more_wrap a{background:rgba(255,255,255,.5);color:#2A87D4;padding:0 1.1rem 0 .5rem;border:.03rem solid #3d8fd4;position:relative;height:.8rem;line-height:.8rem;display:inline-block;overflow:visible}
 .more_wrap .icon{background:#557cdc;color:#dde5f8;width:.8rem;height:.8rem;top:-.03rem;right:-.03rem;-webkit-box-shadow:0 0 .08rem rgba(9,37,61,.34);-moz-box-shadow:0 0 .08rem rgba(9,37,61,.34);-o-box-shadow:0 0 .08rem rgba(9,37,61,.34);box-shadow:0 0 .08rem rgba(9,37,61,.34)}
 
-
 /*page3*/
 .dark_wrap,.dark_wrap a,.dark_wrap .tit_wrap{color:#fff}
 .dark_wrap .tit_wrap h2{color:#adc5ff}
@@ -261,21 +262,20 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#12284d', endC
 .page4 .con_wrap a:last-child{width:6.5rem;height:2.46rem}
 
 /*page5*/
-.swiper_solution{padding-bottom:.9rem;max-width:7.5rem;overflow:visible;width:.75rem}
+.swiper_solution{overflow:visible}
 .swiper_solution p{position:absolute;left:0;bottom:0}
 .swiper_solution .swiper-slide p{line-height:.48rem;padding:.2rem .1rem;position:absolute;width:100%;width:100%;background:rgba(26,121,203,.9)}
 .swiper_solution img,.swiper_partners img{width:100%}
 .swiper_solution>.swiper-pagination-bullets .swiper-pagination-bullet{width:.22rem;height:.22rem}
 
 /*page6*/
-.swiper_page6{width:6.4rem}
 .swiper_page6 h2{padding:0 .82rem;height:.88rem;line-height:.88rem;background:#1a79cb;top:0;left:50%;
 	-webkit-transform:translate(-50%,0);
 	-moz-transform:translate(-50%,0);
 	-ms-transform:translate(-50%,0);
 	-o-transform:translate(-50%,0);
 	transform:translate(-50%,0);z-index:3}
-.swiper_page6 .list_case{padding:.54rem 0 .1rem;margin-top:.44rem;width:6.4rem}
+.swiper_page6 .list_case{padding:.54rem 0 .1rem;margin:.44rem .55rem 0 .55rem;width:6.4rem}
 .swiper_page6 a{padding-left:.8rem;display:block;position:relative}
 .swiper_page6 a p{line-height:.36rem;padding:.2rem .2rem .2rem 0;position:relative;}
 .swiper_page6 a:not(:last-child) p:before{content:'';position:absolute;left:0;right:0;bottom:0;height:.01rem;min-height:1px;border-top:.01rem solid #dce8f5;color:#e5e5e5;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(.5);transform:scaleY(.5);z-index:2;
@@ -299,8 +299,8 @@ header ~ .swiper_outer >.swiper-wrapper>.swiper-slide.footer{padding-top:0}
 .footer .copy:before{content:'';position:absolute;top:0;left:0;width:100%;height:.01rem;min-height:1px;background:#416eab}
 
 
-.swiper_outer >.swiper-wrapper>.swiper-slide.table{display: table}
-.table_cell{display: table-cell;vertical-align: middle;padding-bottom:.9rem}
+
+.swiper-slide .content_wrap{margin-bottom:0.666667rem}
 
 /* @media only screen and (min-width:540px) {
 	.mt50{margin-top:.3rem}
