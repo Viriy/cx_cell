@@ -231,7 +231,7 @@ header ~ .swiper_outer >.swiper-wrapper>.swiper-slide.page1{padding-top:0}
 .tit_wrap h1:before{content:'';position:absolute;left:0;bottom:0;width:1.8rem;height:.02rem;min-height:1px;background:#a3b5d3}
 .tit_wrap h2{padding:.1rem .15rem;color:#3865cf;margin-left:1.8rem;border-left:.02rem solid #a3b5d3;border-bottom:.02rem solid #a3b5d3;text-transform:uppercase;margin-top:-.02rem}
 
-.swiper_page2{max-width:7.5rem;max-height:6rem;overflow: hidden}
+.swiper_page2{overflow: hidden}
 .swiper_page2 .swiper-slide{width:3.5rem}
 .swiper_page2 a{position:relative;margin:.05rem;display:inline-block}
 .swiper_page2 a,.swiper_page2 img{width:3.5rem;height:2.4rem}
