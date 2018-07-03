@@ -233,7 +233,7 @@ header ~ .swiper_outer >.swiper-wrapper>.swiper-slide.page1{padding-top:0}
 
 .swiper_page2{max-width:7.5rem}
 .swiper_page2 .swiper-slide{width:3.5rem}
-.swiper_page2 a{position:relative;margin:.05rem;display: inline-block}
+.swiper_page2 a{position:relative;margin:.05rem;display:block}
 .swiper_page2 a,.swiper_page2 img{width:3.5rem;height:2.4rem}
 .swiper_page2 a p{position:absolute;left:0;bottom:0;width:100%;height:.9rem;color:#fff;padding:.42rem .16rem 0;background:#12284d;
 background:-moz-linear-gradient(top, rgba(18,40,77,0) 0%, rgba(18,40,77,.6) 100%);
