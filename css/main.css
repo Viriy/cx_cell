@@ -290,7 +290,7 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#12284d', endC
 /* .swiper_partners .swiper-slide{height:1rem} */
 .swiper_partners a{width:2.8rem;height:1rem;min-width:2.8rem;min-height:1rem;margin:.1rem}
 .swiper_partners .swiper-slide{min-height: 1.2rem}
-.swiper_partners .swiper-slide img{width:5.8rem;height:3.4rem;margin: auto;display: block;}
+.swiper_partners .swiper-slide img{width:5.8rem;height:4.6rem;margin: auto;display: block}
 
 /*footer*/
 header ~ .swiper_outer >.swiper-wrapper>.swiper-slide.footer{padding-top:0}
