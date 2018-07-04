@@ -1,11 +1,25 @@
 mui.init();
+
 //主界面和侧滑菜单界面均支持区域滚动；
 mui('#offCanvasSideScroll').scroll();
-
+mui('#offCanvasContentScroll').scroll();
+mui('.mui-scroll-wrapper').scroll();
+//实现ios平台原生侧滑关闭页面；
+if (mui.os.plus && mui.os.ios) {
+    mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件
+        plus.webview.currentWebview().setStyle({
+            'popGesture': 'none'
+        });
+    });
+}
 //侧滑容器父节点
 var offCanvasWrapper = mui('.mui-off-canvas-wrap');
 $(".offCanvasHide").on('tap', function() {
     offCanvasWrapper.offCanvas('close');
+});
+
+mui('body').on('tap', '[href^="html"],[href*="html"],[href^="tel:"],[href*="tel:"],[href^="mailto:"],[href*="mailto:"],[href^="http"],[href*="http"],[href^="www."],[href*="www."],[href^="com"],[href*="com"],[href^="php"],[href*="php"],[href^="aspx"],[href*="aspx"]', function() {
+    window.top.location.href = this.href;
 });
 
 (function() {
@@ -38,7 +52,7 @@ $(".offCanvasHide").on('tap', function() {
 		updateOrientation();
 	};
 	window.addEventListener('DOMContentLoaded',init,false);
-	
+
     // 微信分享
      function ready(){
        share({
@@ -50,3 +64,13 @@ $(".offCanvasHide").on('tap', function() {
         });
      }
 })();
+
+
+
+$(function(){
+	//返回顶部
+	var $top = parseInt($(window).scrollTop() / $(window).height()) + 1;
+	$(".to_top").click(function() {
+	    $("html,body").animate({ scrollTop: 0 }, 300 * $top)
+	})
+})
