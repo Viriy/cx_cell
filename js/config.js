@@ -65,12 +65,7 @@ mui('body').on('tap', '[href^="html"],[href*="html"],[href^="tel:"],[href*="tel:
      }
 })();
 
-
-
-$(function(){
-	//返回顶部
-	var $top = parseInt($(window).scrollTop() / $(window).height()) + 1;
-	$(".to_top").click(function() {
-	    $("html,body").animate({ scrollTop: 0 }, 300 * $top)
-	})
-})
+//返回顶部
+mui('body').on('tap', '.to_top', function() {
+    mui('#offCanvasContentScroll').scroll().scrollTo(0,0,1000);
+});

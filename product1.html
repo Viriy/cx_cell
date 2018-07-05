@@ -25,6 +25,7 @@
     <meta name="MobileOptimized" content="320">
     <meta name="renderer" content="webkit">
     <title>承信网络-产品中心</title>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/mui.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
@@ -63,18 +64,24 @@
             </header>
             <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
                 <div class="mui-scroll">
-                    <img class="mb60" src="images/subpage/pro1.jpg" alt="">
+                    <img class="mb50" src="images/subpage/pro1.jpg" alt="">
+                    <h2 class="tit_dec f32 blue pr i mb50"><span class="animated flipInX i">承信农业信息服务系统</span><b></b></h2>
                     <div class="news_details f28 colorlight">
                         <p>　　承信农业信息服务系统是以互联网和移动互联网为基础，结合先进的通信技术，集手机客户端、短信、彩信、网站、语音、视频、在线应用等多种服务方式，而开发的服务于政府、涉农企业和第三方信息服务商的管理平台。</p>
                         <p>　　承信农业信息服务系统包括信息上传系统、短信网关系统、内容管理系统、语音服务系统、业务管理系统、统计系统等十二大子系统，能够为农业信息服务部门、电信运营商、涉农企业及个人提供有效地支撑和信息服务。</p>
-                        <img src="images/subpage/prod1_1.jpg" alt="">
+                        <img class="mt50 mb30" src="images/subpage/prod1_1.jpg" alt="">
                         <img src="images/subpage/prod1_2.jpg" alt="">
-                        <img src="images/subpage/prod1_3.jpg" alt="">
-                        <img src="images/subpage/prod1_4.jpg" alt="">
                     </div>
-                    <div class="news_footer blue f30">
-                        <a href="" flex><em class="grey">上一篇：</em><span class="flex1 ellipsis">推动绿色生产方式落地生根推动绿色生产方式落地生根推动绿色生产方式落地生根推动绿色生产方式落地生根</span></a>
-                        <a href="" flex><em class="grey">下一篇：</em><span class="flex1 ellipsis">退休市长的“田园梦”</span></a>
+                    <h2 class="tit_dec f32 blue pr i mb50"><span class="animated flipInX i">三农网</span><b></b></h2>
+                    <div class="news_details f28 colorlight">
+                        <p>　　三农网（www.3nong.com）面向全球提供农产品的电子商务服务，旨在利用互联网将农产品和涉农企业的市场信息展示给采购商和需求方。通过为企业提供产品展示、信息服务、网上支付、广告宣传、在线管理等服务，可使需求者获得产品价格、交易状况、行情预测、专家建议等完整资讯，帮助涉农企业降低运营成本，掌握整个产业动态，洞悉最新商机，为客户提供低廉、快捷的市场开发渠道，为农产品进入国内和国际市场开启一扇方便的电子商务之门。</p>
+                        <img class="mt50" src="images/subpage/prod1_3.jpg" alt="">
+                    </div>
+                    <h2 class="tit_dec f32 blue pr i mb50"><span class="animated flipInX i">“农事通”手机客户端（APP）</span><b></b></h2>
+                    <div class="news_details f28 colorlight">
+                        <p>　　“农事通”手机客户端（APP）是集聚焦三农、农业技术、供求信息、价格行情、劳务市场、企业库、农业网址、12316、致富宝典、地方风情、休闲娱乐、农政通互动功能于一体的综合应用产品，结合语音加图片的方式展示给用户，更直接更醒目，是集可自行发布供求信息及与农业专家在线互动于一体的移动网络平台。 通过“农事通”手机客户端（APP）能够使用户不受地域、时间等因素的限制，随时随地都可以方便及时的获取三农相关信息、学习农业技术、处理产品交易服务、与专家互动及休闲娱乐等活动体验，并且提供政府人员移动办公等功能，提高工作效率。
+                        </p>
+                        <img class="mt50" style="width: 3.4rem" src="images/subpage/prod1_4.jpg" alt="">
                     </div>
                     <footer class="footer tc">
                         <div class="con_wrap">
@@ -97,6 +104,18 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/mui.min.js"></script>
     <script src="js/config.js"></script>
+    <script type="text/javascript">
+    $(window).scroll(function() {
+        $('#animated').each(function() {
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow + 400) {
+                $(this).addClass("slideUp");
+            }
+        });
+    });
+    </script>
 </body>
 
 </html>
