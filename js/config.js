@@ -14,7 +14,7 @@ if (mui.os.plus && mui.os.ios) {
 }
 //侧滑容器父节点
 var offCanvasWrapper = mui('.mui-off-canvas-wrap');
-$(".offCanvasHide").on('tap', function() {
+$(".list_menu a").on('tap', function() {
     offCanvasWrapper.offCanvas('close');
 });
 
