@@ -37,6 +37,7 @@
                 docEl.style.fontSize = result_font + 'px';
             }
         };
+        recalc();
     win.addEventListener(resizeEvt, recalc, false);
     doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
