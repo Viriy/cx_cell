@@ -1,5 +1,31 @@
+
+/*
+ * 页面加入这段代码可使Android机器页面不再受到用户字体缩放强制改变大小
+ * 但是会有一个1秒左右的延迟，期间可以考虑通过loading展示
+ * 仅供参考
+ */
+(function(){
+    if (typeof(WeixinJSBridge) == "undefined") {
+        document.addEventListener("WeixinJSBridgeReady", function (e) {
+            setTimeout(function(){
+                WeixinJSBridge.invoke('setFontSizeCallback',{"fontSize":0}, function(res) {
+                    // alert(JSON.stringify(res));
+                });
+            },0);
+        });
+    } else {
+        setTimeout(function(){
+            WeixinJSBridge.invoke('setFontSizeCallback',{"fontSize":0}, function(res) {
+                // alert(JSON.stringify(res));
+            });
+        },0);
+    }
+})();
+
 /*to load use reset-screen-size*/
 (function(document){var dcl=document.documentElement,wh;function setRootRem(){ww=dcl.clientWidth;wh=dcl.clientHeight;if(wh<ww*2-wh*0.037){dcl.style.fontSize=100*(wh/1334)+'px'}else{dcl.style.fontSize=100*(ww/750)+'px'}}setRootRem();document.addEventListener('DOMContentLoaded',setRootRem,false);window.addEventListener('resize',setRootRem,false)})(document);
+
+
 
 // (function(doc, win) {
 // //      用原生方法获取用户设置的浏览器的字体大小(兼容ie)
