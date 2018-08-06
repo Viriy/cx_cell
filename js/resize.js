@@ -52,7 +52,6 @@
             	//dcl.style.fontSize = 100 * (wh / 1334) + 'px'
                 }
             else{
-            	alert(111);
                 //设置rem的js设置的字体大小
                 view_jsset_font=75 * (clientWidth / 750);
 //              最终的字体大小为rem字体/系数
