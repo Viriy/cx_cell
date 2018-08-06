@@ -309,7 +309,7 @@ header ~ .swiper_outer >.swiper-wrapper>.swiper-slide.footer{padding-top:0}
 .swiper_outer > .swiper-wrapper > .swiper-slide.footer,footer.footer{height:auto;background:url('../images/footer_bg.jpg') 50% no-repeat;background-size:cover;border-top:.01rem solid #14599f;color:#3186cd}
 .footer p{line-height:.42rem}
 .footer .link_wrap a{color:#2a87d4;vertical-align:middle;padding:.32rem .32rem;display:inline-block}
-.footer .i_tel{color:#339cf4;margin-bottom:.3rem;line-height:.5rem;height: .5rem}
+.footer .i_tel{color:#339cf4;margin-bottom:.3rem;line-height:.5rem}
 .footer .con_wrap{padding:0 0 .46rem}
 .footer .copy{line-height:.9rem}
 .footer .copy:before{content:'';position:absolute;top:0;left:0;width:100%;height:.01rem;min-height:1px;background:#416eab}
