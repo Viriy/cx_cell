@@ -37,14 +37,14 @@
             ww = dcl.clientWidth;
         	wh = dcl.clientHeight;
             if (wh < ww * 2 - wh * 0.037) {
-            	dcl.style.fontSize = 100 * (wh / 1334) + 'px'
-            } else {
 //              设置rem的js设置的字体大小
                 view_jsset_font=100 * (clientWidth / 750);
 //              最终的字体大小为rem字体/系数
                 result_font=view_jsset_font/xs;
 //              设置根字体大小
                 docEl.style.fontSize = result_font + 'px';
+            } else {
+            	dcl.style.fontSize = 100 * (wh / 1334) + 'px'
             }
 
             //if(clientWidth<540){
