@@ -2,16 +2,16 @@
 // (function(document){var dcl=document.documentElement,wh;function setRootRem(){ww=dcl.clientWidth;wh=dcl.clientHeight;if(wh<ww*2-wh*0.037){dcl.style.fontSize=100*(wh/1334)+'px'}else{dcl.style.fontSize=100*(ww/750)+'px'}}setRootRem();document.addEventListener('DOMContentLoaded',setRootRem,false);window.addEventListener('resize',setRootRem,false)})(document);
 
 
-(function(document) {
-    var dcl = document.documentElement,
-        wh;
+// (function(document) {
+//     var dcl = document.documentElement,
+//         wh;
 
-    function setRootRem() { ww = dcl.clientWidth;
-        wh = dcl.clientHeight;
-        if (wh < ww * 2 - wh * 0.037) { dcl.style.fontSize = 100 * (wh / 1334) + 'px' } else { dcl.style.fontSize = 100 * (ww / 750) + 'px' } }
-    setRootRem();
-    document.addEventListener('DOMContentLoaded', setRootRem, false);
-    window.addEventListener('resize', setRootRem, false) })(document);
+//     function setRootRem() { ww = dcl.clientWidth;
+//         wh = dcl.clientHeight;
+//         if (wh < ww * 2 - wh * 0.037) { dcl.style.fontSize = 100 * (wh / 1334) + 'px' } else { dcl.style.fontSize = 100 * (ww / 750) + 'px' } }
+//     setRootRem();
+//     document.addEventListener('DOMContentLoaded', setRootRem, false);
+//     window.addEventListener('resize', setRootRem, false) })(document);
 
 
 (function(doc, win) {
@@ -29,11 +29,11 @@
         var docEl = doc.documentElement,
         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
         clientWidth,
+        dcl = document.documentElement,wh,
         recalc = function() {
+            clientWidth = docEl.clientWidth;
             if(!clientWidth) return;
             if(!doc.addEventListener) return;
-        	var dcl = document.documentElement,wh;
-            clientWidth = docEl.clientWidth;
             ww = dcl.clientWidth;
         	wh = dcl.clientHeight;
             if (wh < ww * 2 - wh * 0.037) {
@@ -49,11 +49,11 @@
 
             //if(clientWidth<540){
 //              设置rem的js设置的字体大小
-                view_jsset_font=100 * (clientWidth / 750);
-//              最终的字体大小为rem字体/系数
-                result_font=view_jsset_font/xs;
-//              设置根字体大小
-                docEl.style.fontSize = result_font + 'px';
+//                 view_jsset_font=100 * (clientWidth / 750);
+// //              最终的字体大小为rem字体/系数
+//                 result_font=view_jsset_font/xs;
+// //              设置根字体大小
+//                 docEl.style.fontSize = result_font + 'px';
                 //}
             // else{
             //     docEl.style.fontSize = 54 + 'px';
