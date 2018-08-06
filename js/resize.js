@@ -4,23 +4,30 @@
  * 但是会有一个1秒左右的延迟，期间可以考虑通过loading展示
  * 仅供参考
  */
-(function(){
-    if (typeof(WeixinJSBridge) == "undefined") {
-        document.addEventListener("WeixinJSBridgeReady", function (e) {
-            setTimeout(function(){
-                WeixinJSBridge.invoke('setFontSizeCallback',{"fontSize":0}, function(res) {
-                    // alert(JSON.stringify(res));
-                });
-            },0);
-        });
-    } else {
-        setTimeout(function(){
-            WeixinJSBridge.invoke('setFontSizeCallback',{"fontSize":0}, function(res) {
-                // alert(JSON.stringify(res));
+(function () {
+        if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
+            handleFontSize();
+        } else {
+            if (document.addEventListener) {
+                document.addEventListener("WeixinJSBridgeReady", handleFontSize, false);
+            } else if (document.attachEvent) {
+                document.attachEvent("WeixinJSBridgeReady", handleFontSize);
+                document.attachEvent("onWeixinJSBridgeReady", handleFontSize);
+            }
+        }
+        function handleFontSize() {
+            // 设置网页字体为默认大小
+            WeixinJSBridge.invoke('setFontSizeCallback', {
+                'fontSize': 0
             });
-        },0);
-    }
-})();
+            // 重写设置网页字体大小的事件
+            WeixinJSBridge.on('menu:setfont', function () {
+                WeixinJSBridge.invoke('setFontSizeCallback', {
+                    'fontSize': 0
+                });
+            });
+        }
+    })();
 
 /*to load use reset-screen-size*/
 (function(document){var dcl=document.documentElement,wh;function setRootRem(){ww=dcl.clientWidth;wh=dcl.clientHeight;if(wh<ww*2-wh*0.037){dcl.style.fontSize=100*(wh/1334)+'px'}else{dcl.style.fontSize=100*(ww/750)+'px'}}setRootRem();document.addEventListener('DOMContentLoaded',setRootRem,false);window.addEventListener('resize',setRootRem,false)})(document);
